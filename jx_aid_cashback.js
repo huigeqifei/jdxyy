@@ -1,3 +1,12 @@
+/*
+京喜购物返红包助力
+温馨提示：如提示助力火爆，可尝试寻找京东客服
+脚本兼容: Quantumult X, Surge, Loon, JSBox, Node.js
+==============Quantumult X==============
+[task_local]
+#京喜购物返红包助力
+ */
+
 let common = require("./function/common");
 let $ = new common.env('京喜购物返红包助力');
 let min = 5,
