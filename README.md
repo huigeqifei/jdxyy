@@ -1,21 +1,16 @@
-# 说明
- * 发现脚本重复的可以提pr到.gitignore文件，欢迎多提PR。
- * 因为仓库本身是脚本自己同步，有的仓库名字不一样难免又很多重复的。
- * 有互助码没删干净的可以提醒我一下，感谢！
- * 个人研究学习自用，主要是为了自己方便
- * 合集加的最后结尾大佬们脚本,删了互助码和互助池，gua佬没删，需要互助池的可以用他们合集，结尾已经放了链接
- * 想用谁的合集都可以，结尾有其他大佬们的合集或者看Oreomeow大佬整理的那些
+本库来源于gys619
+
+用于跑基本任务。
+
 ## 青龙拉取链接
 ``` 
-ql repo https://github.com/gys619/jdd.git "jd_|jx_|jddj_|gua_|jddj_|getJDCookie|wskey" "activity|backUp" "^jd[^_]|USER|utils|ZooFaker_Necklace|JDJRValidator_Pure|sign_graphics_validate|jddj_cookie|function|ql"
+ql repo https://github.com/iiiiqt/jdxyy.git "jd_|jx_" "activity|backUp" "^jd[^_]|USER|utils|ZooFaker_Necklace|JDJRValidator_Pure|sign_graphics_validate|function|ql" "balance"
 ```
 ```
 推荐定时 0 */4 * * *
 ```
 
-[兜兜风评价助手1.6测试版](https://github.com/gys619/gys/blob/main/doudoufeng/%E5%85%9C%E5%85%9C%E9%A3%8E%E7%9A%84%E4%B8%9C%E4%BA%AC%E8%AF%84%E4%BB%B7%E5%8A%A9%E6%89%8B(%E6%B5%8B%E8%AF%95%E7%89%88)%201.7.exe?raw=true)
 
-[退会：JDMemberCloseAccount](https://github.com/yqchilde/JDMemberCloseAccount)
 
 拉不到库是因为版本号没了，需要删了重新拉一下，运行一下下面命令就好了，库不稳，见谅！
 
@@ -23,39 +18,19 @@ docker exec -it 容器名 bash
 
 cd repo
 
-rm -rf gys619_jdd
+rm -rf iiiiqt_jdxyy
 
-##### jd_lzdz1_xxxxx.js开卡脚本取消了，有需要用青蛙的开卡
+
 
 ### 脚本说明
-<details>
-<summary>查看</summary>
 
-加了一件安装依赖脚本
-
-* 想跑gua开卡的可以加,false改成true
-    ```
-    export guaopencard_All="false"
-    export guaopencard_addSku_All="false"
-    export guaopencardRun_All="false"
-    export guaopencard_draw="false"
-    ```
-* 去掉多余的双十一红包脚本，自己再config里加export FLCODE=''，否则不能跑
-* 内部互助可以把code.sh和task_before.sh放config目录下，并添加一个code的定时任务，命令:task /ql/config/code.sh
-* 加KingRan大佬仓库
-* 最新面板2.9.7或者新版拉不到可以进入容器
-    ```
-    docker exec -it 容器名 bash
-    cd repo
-    rm -rf gys619_jdd
-    ```
 
 * 加了[Oreomeow大佬](https://raw.githubusercontent.com/Oreomeow/VIP/main/Conf/Qinglong/config.sample.sh)的config模板,名字是jd_config.sample.sh
 * 财富岛新手任务开木板
   * 修改青龙配置文件,如下,加个ts
   ```
    #ql repo命令拉取脚本时需要拉取的文件后缀，直接写文件后缀名即可
-   RepoFileExtensions="js py ts"
+   RepoFileExtensions="js py ts sh"
    ```
 
  
@@ -75,36 +50,56 @@ rm -rf gys619_jdd
  
 
  安装青龙的一些依赖，按需求安装
-* docker exec -it qinglong(自己容器名) bash -c "npm install -g typescript"
 
-* docker exec -it qinglong bash -c "npm install axios date-fns"
+pnpm add -g pnpm
 
-* docker exec -it qinglong bash -c "npm install crypto -g"
+pnpm install -g
 
-* docker exec -it qinglong bash -c "npm install png-js"
+npm install -g npm
 
-* docker exec -it qinglong bash -c "npm install -g npm"
+npm install -g png-js
 
-* docker exec -it qinglong bash -c "pnpm i png-js"
+npm install -g date-fns
 
-* docker exec -it qinglong bash -c "pip3 install requests"
+npm install -g axios
 
-* docker exec -it qinglong bash -c "apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev && cd scripts && npm install canvas --build-from-source"
+npm install -g crypto-js
 
-* docker exec -it qinglong bash -c "apk add python3 zlib-dev gcc jpeg-dev python3-dev musl-dev freetype-dev"
+npm install -g ts-md5
 
-* docker exec -it qinglong bash -c "cd /ql/scripts/ && apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev && npm i && npm i -S ts-node typescript @types/node date-fns axios png-js canvas --build-from-source"
+npm install -g tslib
 
-或者
+npm install -g @types/node
 
-* npm install -g png-js
-* npm install -g date-fns
-* npm install -g axios
-* npm install -g crypto-js
-* npm install -g ts-md5
-* npm install -g tslib
-* npm install -g @types/node
-* npm install -g requests
+npm install -g requests
+
+npm install -g tough-cookie
+
+npm install -g jsdom
+
+npm install -g download
+
+npm install -g tunnel
+
+npm install -g fs
+
+npm install -g ws
+
+npm install -g form-data
+
+pnpm install -g js-base64
+
+pnpm install -g qrcode-terminal
+
+pnpm install -g silly-datetime
+
+pip3 install requests
+
+cd /ql/scripts/ && apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev && npm i && npm i -S ts-node typescript @types/node date-fns axios png-js canvas --build-from-source
+cd /ql
+apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev && cd scripts && npm install canvas --build-from-source
+cd /ql
+apk add python3 zlib-dev gcc jpeg-dev python3-dev musl-dev freetype-dev
 
 </details>
 
