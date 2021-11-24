@@ -4,7 +4,7 @@
 
 ## 青龙拉取链接
 ``` 
-ql repo https://github.com/iiiiqt/jdxyy.git "jd_|jx_" "activity|backUp" "^jd[^_]|USER|utils|ZooFaker_Necklace|JDJRValidator_Pure|sign_graphics_validate|function|ql" "balance"
+ql repo https://github.com/iiiiqt/jdxyy.git "jd_|jx_|gua_" "activity|backUp" "^jd[^_]|USER|utils|ZooFaker_Necklace|JDJRValidator_Pure|sign_graphics_validate|function|ql" "balance"
 ```
 ```
 推荐定时 0 */4 * * *
