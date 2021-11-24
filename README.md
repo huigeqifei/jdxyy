@@ -5,8 +5,6 @@
  * 个人研究学习自用，主要是为了自己方便
  * 合集加的最后结尾大佬们脚本,删了互助码和互助池，gua佬没删，需要互助池的可以用他们合集，结尾已经放了链接
  * 想用谁的合集都可以，结尾有其他大佬们的合集或者看Oreomeow大佬整理的那些
-### [TG群](https://t.me/jdd_fruit)
-### [TG频道](https://t.me/jddfruit)
 ## 青龙拉取链接
 ``` 
 ql repo https://github.com/gys619/jdd.git "jd_|jx_|jddj_|gua_|jddj_|getJDCookie|wskey" "activity|backUp" "^jd[^_]|USER|utils|ZooFaker_Necklace|JDJRValidator_Pure|sign_graphics_validate|jddj_cookie|function|ql"
