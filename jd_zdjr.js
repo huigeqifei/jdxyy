@@ -4,6 +4,7 @@
 jd_zdjr_activityId  活动ID 必需
 jd_zdjr_activityUrl 活动地址 必需
 const $ = new Env('组队瓜分京豆');
+cron 23 12 * 10 *
 已适配docker
 
 需要配合重写获取=>活动id、活动地址
